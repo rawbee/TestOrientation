@@ -12,6 +12,8 @@
 		D55637F6202A465800AAC23B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55637F4202A465800AAC23B /* Main.storyboard */; };
 		D55637F8202A465800AAC23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55637F7202A465800AAC23B /* Assets.xcassets */; };
 		D55637FB202A465800AAC23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55637F9202A465800AAC23B /* LaunchScreen.storyboard */; };
+		D5563803202A46E300AAC23B /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563802202A46E300AAC23B /* ChildViewController.swift */; };
+		D5563809202A54B900AAC23B /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5563808202A54B900AAC23B /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D55637F7202A465800AAC23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D55637FA202A465800AAC23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D55637FC202A465800AAC23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5563802202A46E300AAC23B /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		D5563808202A54B900AAC23B /* FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				D55637F0202A465700AAC23B /* AppDelegate.swift */,
 				D55637F2202A465800AAC23B /* ViewController.swift */,
+				D5563808202A54B900AAC23B /* FadeTransition.swift */,
+				D5563802202A46E300AAC23B /* ChildViewController.swift */,
 				D55637F4202A465800AAC23B /* Main.storyboard */,
 				D55637F7202A465800AAC23B /* Assets.xcassets */,
 				D55637F9202A465800AAC23B /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			files = (
 				D55637F3202A465800AAC23B /* ViewController.swift in Sources */,
 				D55637F1202A465700AAC23B /* AppDelegate.swift in Sources */,
+				D5563809202A54B900AAC23B /* FadeTransition.swift in Sources */,
+				D5563803202A46E300AAC23B /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

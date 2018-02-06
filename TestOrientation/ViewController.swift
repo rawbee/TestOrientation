@@ -12,14 +12,32 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = UIColor.lightGray
+        
+        let button = UIButton(type: .roundedRect)
+        view.addSubview(button)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        button.addTarget(self, action: #selector(buttonTap(_:)), for: .touchDown)
+        button.setTitle("Show Child", for: .normal)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @objc func buttonTap(_ recognizer: UITapGestureRecognizer) {
+        let cvc = ChildViewController()
+        cvc.transitioningDelegate = self
+        present(cvc, animated: true, completion: nil)
     }
-
-
 }
 
+extension ViewController: UIViewControllerTransitioningDelegate {   
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return FadeTransition()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return FadeTransition()
+    }
+}
